@@ -1,3 +1,4 @@
 theme: jekyll-theme-slate
 title: Faiz Ikhwan
 description: Second year computer science student
+include: [favicon.png, favicon.ico]

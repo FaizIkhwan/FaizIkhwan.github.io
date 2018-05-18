@@ -8,7 +8,7 @@ Faiz Ikhwan, 2nd year computer science student from UiTM Shah Alam, Selangor.
 
 ## Interest
 
-My interest is on Android mobile application development, competitive programming.
+My interest is on Android mobile application development and competitive programming.
 
 ##	Follow me
 

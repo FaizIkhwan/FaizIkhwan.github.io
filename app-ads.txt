@@ -1,0 +1,3 @@
+# Authorized sellers for apps published by Faiz Ikhwan
+# Ronaldo Fake Video Call (Android) - com.fi.fakecall.one
+google.com, pub-6639179992588626, DIRECT, f08c47fec0942fa0

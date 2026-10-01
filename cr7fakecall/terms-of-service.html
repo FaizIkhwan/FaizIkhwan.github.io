@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Ronaldo Fake Video Call</title>
+<style>
+  :root {
+    --ink: #1c2126;
+    --ink-soft: #4a5158;
+    --paper: #faf9f6;
+    --line: #e2ded6;
+    --accent: #b5502f;
+    --accent-soft: #f2e4dc;
+    --mono: #6b7178;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .masthead {
+    border-bottom: 1px solid var(--line);
+    padding: 3.5rem 1.5rem 2.5rem;
+    text-align: center;
+  }
+
+  .masthead .eyebrow {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+  }
+
+  .masthead h1 {
+    font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+    font-weight: 500;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .masthead p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .layout {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 5rem;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 3rem;
+  }
+
+  nav.toc {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.85rem;
+  }
+
+  nav.toc .toc-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mono);
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+  }
+
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc-counter;
+  }
+
+  nav.toc li {
+    counter-increment: toc-counter;
+    margin-bottom: 0.55rem;
+  }
+
+  nav.toc a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  nav.toc a::before {
+    content: counter(toc-counter, decimal-leading-zero);
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
+
+  nav.toc a:hover { color: var(--accent); }
+
+  main { min-width: 0; }
+
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 1.1rem 1.3rem;
+    border-radius: 2px;
+    font-size: 0.95rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .callout p { margin: 0; }
+
+  section {
+    padding-top: 2.4rem;
+    margin-top: 2.4rem;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 1.5rem;
+  }
+
+  section:first-of-type {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 1.1rem;
+  }
+
+  h3 {
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin: 1.6rem 0 0.5rem;
+  }
+
+  p { margin: 0 0 1rem; color: var(--ink); }
+
+  ul { margin: 0 0 1rem; padding-left: 1.3rem; }
+  li { margin-bottom: 0.5rem; }
+
+  strong { font-weight: 600; }
+
+  a.inline { color: var(--accent); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.88rem;
+    margin: 0.8rem 0 1.4rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0.6rem 0.7rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  th {
+    color: var(--mono);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .placeholder {
+    background: #fff3ea;
+    color: var(--accent);
+    padding: 0.05em 0.4em;
+    border-radius: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.85em;
+    font-weight: 600;
+  }
+
+  footer {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: var(--mono);
+    font-size: 0.8rem;
+    padding: 2.5rem 1.5rem 3rem;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 720px) {
+    .layout { grid-template-columns: 1fr; gap: 1.5rem; }
+    nav.toc { position: static; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="masthead">
+  <div class="eyebrow">Terms of Service</div>
+  <h1>Ronaldo Fake Video Call</h1>
+  <p>Last updated: October 2, 2026</p>
+</div>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-label">On this page</div>
+    <ol>
+      <li><a href="#agreement">Agreement</a></li>
+      <li><a href="#what-it-is">What this app is</a></li>
+      <li><a href="#eligibility">Who can use it</a></li>
+      <li><a href="#acceptable-use">Acceptable use</a></li>
+      <li><a href="#no-affiliation">No affiliation</a></li>
+      <li><a href="#ip">Intellectual property</a></li>
+      <li><a href="#ads">Ads &amp; third parties</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#disclaimer">Disclaimer</a></li>
+      <li><a href="#liability">Limitation of liability</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#changes">Changes to these terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="agreement">
+      <h2>Agreement</h2>
+      <div class="callout">
+        <p><strong>The short version:</strong> this is a just-for-fun app that plays a pre-recorded video made to look like a video call. Use it for harmless entertainment, don't use it to trick anyone into real harm, and understand it's provided as-is.</p>
+      </div>
+      <p>These Terms of Service ("Terms") govern your use of <strong>Ronaldo Fake Video Call</strong> (the "App"). By downloading, installing, or using the App, you agree to these Terms. If you do not agree, please do not use the App.</p>
+    </section>
+
+    <section id="what-it-is">
+      <h2>What this app is</h2>
+      <p>The App is a <strong>simulation and entertainment product</strong>. It plays a pre-recorded, locally bundled video styled to look like an incoming video call. No real call takes place, no real person is contacted, and the App cannot place or receive real calls.</p>
+      <p>Nothing in the App is a real communication from, or a statement by, any real person.</p>
+    </section>
+
+    <section id="eligibility">
+      <h2>Who can use it</h2>
+      <p>The App is intended for users aged <strong>18 and over</strong>. By using the App you confirm that you meet this age requirement and that you are legally able to accept these Terms in your country.</p>
+    </section>
+
+    <section id="acceptable-use">
+      <h2>Acceptable use</h2>
+      <p>You may use the App for personal, non-commercial entertainment. You agree <strong>not</strong> to:</p>
+      <ul>
+        <li>Use the App, or recordings or screenshots of it, to deceive anyone into believing they are really communicating with the person depicted, in a way that could cause them harm, distress, or loss.</li>
+        <li>Use the App for fraud, scams, harassment, bullying, impersonation for gain, or any other unlawful purpose.</li>
+        <li>Present screenshots or recordings of the App as genuine evidence of contact with, or endorsement by, any real person.</li>
+        <li>Copy, modify, decompile, reverse-engineer, or redistribute the App or its content, except where the law expressly allows it.</li>
+        <li>Interfere with the App's advertising, or attempt to generate fraudulent ad impressions or clicks.</li>
+      </ul>
+      <p>Pranks should be harmless and reveal themselves quickly. You are solely responsible for how you use the App and for any consequences of that use.</p>
+    </section>
+
+    <section id="no-affiliation">
+      <h2>No affiliation</h2>
+      <p>The App is an independent product. It is <strong>not affiliated with, endorsed by, sponsored by, or connected to</strong> Cristiano Ronaldo, any football club, national team, league, sponsor, or any other real athlete, celebrity, or public figure. Any names or likenesses are used for parody and entertainment purposes only.</p>
+      <p>If you are a rights holder and believe content in the App infringes your rights, please contact us (see <a class="inline" href="#contact">Contact</a>) and we will review the request promptly.</p>
+    </section>
+
+    <section id="ip">
+      <h2>Intellectual property</h2>
+      <p>The App's code, design, and original content belong to the developer or its licensors. We grant you a personal, revocable, non-exclusive, non-transferable licence to install and use the App on devices you own or control, subject to these Terms and the rules of the app store you downloaded it from.</p>
+    </section>
+
+    <section id="ads">
+      <h2>Ads &amp; third parties</h2>
+      <p>The App is free and supported by advertising through Google AdMob, and uses Google's Firebase Crashlytics for crash reporting. Ads are provided by third parties; we do not control and are not responsible for the content of ads or for any products, services, or websites they link to. Your interactions with advertisers are solely between you and them.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy</h2>
+      <p>How the App handles information is explained in our <a class="inline" href="privacy-policy">Privacy Policy</a>, which forms part of these Terms.</p>
+    </section>
+
+    <section id="disclaimer">
+      <h2>Disclaimer</h2>
+      <p>The App is provided <strong>"as is" and "as available"</strong>, without warranties of any kind, whether express or implied, including any implied warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee that the App will be uninterrupted, error-free, or compatible with every device, or that any ad will or will not be shown.</p>
+    </section>
+
+    <section id="liability">
+      <h2>Limitation of liability</h2>
+      <p>To the fullest extent permitted by law, the developer will not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of data, goodwill, or reputation, arising from your use of, or inability to use, the App — including any consequences of a prank carried out with it.</p>
+      <p>Because the App is free, to the fullest extent permitted by law the developer's total liability for any claim relating to the App is limited to zero. Some jurisdictions do not allow certain limitations, so some of the above may not apply to you; nothing in these Terms limits rights you have that cannot be waived under applicable consumer law.</p>
+    </section>
+
+    <section id="termination">
+      <h2>Termination</h2>
+      <p>You can stop using the App at any time by uninstalling it. We may suspend, change, or discontinue the App, or your licence to use it, at any time — for example if you breach these Terms.</p>
+    </section>
+
+    <section id="changes">
+      <h2>Changes to these terms</h2>
+      <p>We may update these Terms from time to time. The "Last updated" date at the top of this page will always reflect the most recent revision. Continued use of the App after a change means you accept the updated Terms.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Questions about these Terms or the App can be sent to:</p>
+      <p><strong>me@faizikhwan.com</strong></p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  ©2026 — Ronaldo Fake Video Call. This app is an independent entertainment product and is not affiliated with or endorsed by any real individual.
+  <br><a class="inline" href="privacy-policy">Privacy Policy</a>
+</footer>
+
+</body>
+</html>

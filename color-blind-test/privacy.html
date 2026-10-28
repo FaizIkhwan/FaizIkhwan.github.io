@@ -11,18 +11,18 @@
 <main>
 <nav><a href="/color-blind-test/">Color Blind Test</a><a href="/color-blind-test/terms">Terms</a></nav>
 <h1>Privacy Policy</h1>
-<p class="meta">Color Blind Test (Android app <code>com.fi.colorblindtest</code>) · Effective 14 October 2026</p>
+<p class="meta">Color Blind Test (Android and iOS app <code>com.fi.colorblindtest</code>) · Effective 28 October 2026</p>
 
 <p>This policy explains what information the Color Blind Test app ("the app", "we", "us") collects, why, and the choices you have. The app is made by <strong>Faiz Ikhwan</strong>.</p>
 
-<p>The short version: there are no accounts, and you never enter your name, email or any other personal details. The app uses Google services to show ads, count how the app is used and report crashes. Those services collect device identifiers and usage data, as described below.</p>
+<p>The short version: there are no accounts, and you never enter your name, email or any other personal details. The app uses Google services to show ads, count how the app is used and report crashes. If you buy "Remove ads", Google Play or the Apple App Store handles the payment; we never see your payment details. Those services collect device identifiers and usage data, as described below.</p>
 
 <h2>1. Information we collect</h2>
 <div class="card scroll">
 <table>
 <tr><th>What</th><th>Collected by</th><th>Why</th></tr>
 <tr>
-  <td><strong>App usage events:</strong> app opened, test started, each plate answered (plate number, whether the answer was right, whether it was typed, skipped or timed out, and how long it took), test finished (score and result band), test abandoned or inconclusive, and ad events (requested, loaded, shown, failed).</td>
+  <td><strong>App usage events:</strong> app opened, test started, each plate answered (plate number, whether the answer was right, whether it was typed, skipped or timed out, and how long it took), test finished (score and result band), test abandoned or inconclusive, ad events (requested, loaded, shown, failed), and "Remove ads" purchase events (started, completed, restored, cancelled, failed).</td>
   <td>Google Analytics for Firebase</td>
   <td>To understand how the test is used and make it better</td>
 </tr>
@@ -37,14 +37,19 @@
   <td>To find and fix bugs</td>
 </tr>
 <tr>
-  <td><strong>Advertising data:</strong> the device advertising ID, IP address, approximate location, and interactions with ads.</td>
+  <td><strong>Advertising data:</strong> IP address, approximate location, interactions with ads, and on Android the device advertising ID. On iOS the app doesn't ask for tracking permission, so the advertising identifier (IDFA) is never available to it or its ad partners.</td>
   <td>Google AdMob and its ad partners</td>
   <td>To show ads (one per completed test), limit fraud, and measure ad performance. Depending on your consent and region, ads may be personalised.</td>
 </tr>
 <tr>
-  <td><strong>On your device only:</strong> which plates you've already seen, so the next test shows different ones.</td>
+  <td><strong>Purchases:</strong> if you buy "Remove ads", your store account, payment details and the transaction record.</td>
+  <td>Google Play or the Apple App Store (we receive only a confirmation that the purchase was made)</td>
+  <td>To process the payment and let you restore the purchase on a new device</td>
+</tr>
+<tr>
+  <td><strong>On your device only:</strong> which plates you've already seen, so the next test shows different ones, and whether you've bought "Remove ads".</td>
   <td>The app (never sent anywhere)</td>
-  <td>Plate rotation</td>
+  <td>Plate rotation, and turning ads off after a purchase</td>
 </tr>
 </table>
 </div>
@@ -58,6 +63,11 @@
   <li>Google AdMob: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a></li>
   <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
 </ul>
+<p>Purchases are processed by the store you downloaded the app from, under its own terms:</p>
+<ul>
+  <li>Google Play: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li>Apple App Store: <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
+</ul>
 <p>We don't sell your personal information, and we don't share it with anyone other than these service providers.</p>
 
 <h2>3. Consent (EEA, UK and Switzerland)</h2>
@@ -65,12 +75,13 @@
 
 <h2>4. Your choices everywhere</h2>
 <ul>
-  <li>Reset your advertising ID, or opt out of personalised ads, in your device settings: <em>Settings → Google → Ads</em> (Android).</li>
-  <li>Uninstalling the app deletes the plate history stored on your device.</li>
+  <li>Android: reset your advertising ID, or opt out of personalised ads, in <em>Settings → Google → Ads</em>.</li>
+  <li>iOS: the app never asks to track you. You can turn off Apple's own personalised ads in <em>Settings → Privacy &amp; Security → Apple Advertising</em>.</li>
+  <li>Uninstalling the app deletes the plate history stored on your device. A "Remove ads" purchase stays with your store account; use <strong>Restore purchase</strong> on the home screen to get it back.</li>
 </ul>
 
 <h2>5. How long data is kept</h2>
-<p>User-level Google Analytics data is kept for the retention period set in Google Analytics (at most 14 months), then deleted. Crashlytics keeps crash reports for 90 days. AdMob data is kept under Google's policies linked above.</p>
+<p>User-level Google Analytics data is kept for the retention period set in Google Analytics (at most 14 months), then deleted. Crashlytics keeps crash reports for 90 days. AdMob data is kept under Google's policies linked above. Purchase records are kept by Google Play or Apple under their own policies.</p>
 
 <h2>6. Your rights</h2>
 <p>Depending on where you live (for example under the GDPR or US state privacy laws), you may have the right to access, correct, delete or object to the processing of your personal data. The app doesn't know who you are, so we usually can't link data to you directly. If you contact us we'll help where we can, for example by deleting Analytics data linked to your app-instance ID if you can provide it.</p>

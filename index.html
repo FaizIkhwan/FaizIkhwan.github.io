@@ -5,11 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Faiz Ikhwan — Mobile Apps Developer</title>
 <meta name="description" content="Faiz Ikhwan, Mobile Apps Developer. Portfolio and contact." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/sora-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
 
 <style>
+  /* Self-hosted fonts (no Google Fonts requests) */
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 100 800;
+    font-display: swap;
+    src: url('/fonts/sora-latin-wght.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 100 800;
+    font-display: swap;
+    src: url('/fonts/jetbrains-mono-latin-wght.woff2') format('woff2');
+  }
+
   :root {
     --bg: #f6f7f9;
     --surface: #ffffff;

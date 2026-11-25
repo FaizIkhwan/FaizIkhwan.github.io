@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · Purr Diary</title>
+  <meta name="description" content="How Purr Diary handles your data. Your cat's diary stays on your device.">
+  <meta name="theme-color" content="#FFF7EE">
+  <link rel="icon" href="mascot.svg" type="image/svg+xml">
+  <style>
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-SemiBold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-ExtraBold.ttf") format("truetype"); font-weight: 800; font-display: swap; }
+@font-face { font-family: "Baloo 2"; src: url("fonts/Baloo2-ExtraBold.ttf") format("truetype"); font-weight: 800; font-display: swap; }
+
+:root {
+  --cream: #fff7ee;
+  --surface: #ffffff;
+  --muted: #f3e9df;
+  --ledge: #eadccf;
+  --ink: #4a3a33;
+  --ink-soft: #6b574c;
+  --ink-faint: #8a7466;
+  --peach: #ffa894;
+  --peach-ledge: #e27e68;
+  --peach-tint: #ffe3da;
+  --mint: #9fd9c0;
+  --mint-ledge: #6fbe9c;
+  --mint-tint: #cdeedf;
+  --lavender: #c8b8f2;
+  --radius: 22px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font: 600 17px/1.6 "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+a { color: var(--peach-ledge); font-weight: 800; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+
+h1, h2, h3 { font-family: "Baloo 2", "Nunito", system-ui, sans-serif; font-weight: 800; line-height: 1.15; margin: 0; }
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 22px; }
+
+/* Header */
+.site-header { padding: 18px 0; }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 24px; }
+.brand img { width: 42px; height: auto; }
+.nav { display: flex; gap: 18px; }
+.nav a { color: var(--ink-soft); text-decoration: none; font-size: 16px; }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--peach); text-decoration-thickness: 3px; }
+
+/* Hero */
+.hero { padding: 40px 0 56px; }
+.hero .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.hero h1 { font-size: clamp(40px, 6vw, 60px); }
+.hero p.lead { font-size: 20px; color: var(--ink-soft); margin: 16px 0 28px; max-width: 34ch; }
+.hero .mascot { width: 100%; max-width: 320px; justify-self: center; filter: drop-shadow(0 10px 0 var(--ledge)); }
+.badges { display: flex; gap: 12px; flex-wrap: wrap; }
+.pill {
+  display: inline-block; padding: 12px 22px; border-radius: 999px; text-decoration: none;
+  background: var(--peach); color: #4a2a22; box-shadow: 0 4px 0 var(--peach-ledge); font-weight: 800;
+}
+.pill.mint { background: var(--mint); color: #1f4d3c; box-shadow: 0 4px 0 var(--mint-ledge); }
+.pill:hover { color: #4a2a22; transform: translateY(1px); box-shadow: 0 3px 0 var(--peach-ledge); }
+.pill.mint:hover { color: #1f4d3c; box-shadow: 0 3px 0 var(--mint-ledge); }
+.soon { display: block; margin-top: 12px; color: var(--ink-faint); font-size: 15px; }
+
+/* Feature cards */
+.section { padding: 28px 0 48px; }
+.section h2 { font-size: 32px; margin-bottom: 20px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.card {
+  background: var(--surface); border: 2px solid var(--ledge); border-radius: var(--radius);
+  box-shadow: 0 5px 0 var(--ledge); padding: 22px;
+}
+.card .icon { font-size: 30px; line-height: 1; }
+.card h3 { font-size: 21px; margin: 10px 0 6px; }
+.card p { margin: 0; color: var(--ink-soft); font-size: 16px; }
+.card.peach { background: var(--peach-tint); border-color: #f2b9aa; box-shadow: 0 5px 0 #f2b9aa; }
+.card.mint { background: var(--mint-tint); border-color: #a6dcc4; box-shadow: 0 5px 0 #a6dcc4; }
+.note { margin-top: 22px; color: var(--ink-faint); font-size: 15px; }
+
+/* Legal pages */
+.doc { padding: 16px 0 56px; }
+.doc .wrap { max-width: 760px; }
+.doc article {
+  background: var(--surface); border: 2px solid var(--ledge); border-radius: var(--radius);
+  box-shadow: 0 5px 0 var(--ledge); padding: clamp(22px, 5vw, 44px);
+}
+.doc h1 { font-size: clamp(34px, 5vw, 44px); }
+.doc .updated { color: var(--ink-faint); margin: 6px 0 24px; font-size: 15px; }
+.doc h2 { font-size: 24px; margin: 34px 0 8px; }
+.doc h3 { font-size: 19px; margin: 22px 0 6px; font-family: "Nunito", sans-serif; }
+.doc p, .doc li { color: var(--ink-soft); }
+.doc ul { padding-left: 22px; }
+.doc li { margin: 6px 0; }
+.doc strong { color: var(--ink); font-weight: 800; }
+.summary { background: var(--mint-tint); border-radius: 16px; padding: 16px 20px; margin: 0 0 8px; }
+.summary p { margin: 0; color: #1f4d3c; }
+.summary ul { margin: 8px 0 0; }
+.summary li { color: #1f4d3c; }
+.toc { background: var(--muted); border-radius: 16px; padding: 14px 20px; margin: 20px 0 0; }
+.toc ol { margin: 6px 0 0; padding-left: 22px; columns: 2; column-gap: 28px; }
+.toc li { margin: 2px 0; font-size: 15px; }
+.toc a { font-weight: 600; color: var(--ink-soft); }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--muted); vertical-align: top; color: var(--ink-soft); }
+th { color: var(--ink); font-weight: 800; background: var(--cream); }
+.table-scroll { overflow-x: auto; }
+
+/* Footer */
+.site-footer { border-top: 2px solid var(--ledge); padding: 26px 0 40px; color: var(--ink-faint); font-size: 15px; }
+.site-footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.site-footer a { color: var(--ink-soft); }
+
+/* 404 */
+.lost { text-align: center; padding: 60px 0 80px; }
+.lost img { width: 180px; margin-bottom: 20px; }
+.lost h1 { font-size: 44px; }
+.lost p { color: var(--ink-soft); margin: 12px 0 26px; }
+
+@media (max-width: 760px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero .mascot { max-width: 200px; order: -1; }
+  .grid { grid-template-columns: 1fr; }
+  .toc ol { columns: 1; }
+}
+
+@media print {
+  .site-header, .site-footer, .toc { display: none; }
+  .doc article { border: 0; box-shadow: none; padding: 0; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="privacy.html"><img src="mascot.svg" alt="" width="42" height="38">Purr Diary</a>
+      <nav class="nav" aria-label="Main">
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:faizikhwansupport@gmail.com">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="doc">
+    <div class="wrap">
+      <article>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: 25 November 2026</p>
+
+        <div class="summary">
+          <p><strong>The short version</strong></p>
+          <ul>
+            <li>Your cats' profiles, care entries, notes, photos and videos stay on your device. There is no account and no Purr Diary server.</li>
+            <li>Backup is optional and goes to <strong>your own</strong> Google Drive or iCloud. We can't see it.</li>
+            <li>Ads (Google AdMob), usage analytics (Firebase Analytics) and crash reports (Firebase Crashlytics) use some device and usage data. They never include your cats' names, notes, health entries or photos.</li>
+          </ul>
+        </div>
+
+        <nav class="toc" aria-label="Contents">
+          <strong>Contents</strong>
+          <ol>
+            <li><a href="#who">Who we are</a></li>
+            <li><a href="#device">Data on your device</a></li>
+            <li><a href="#backup">Backup and export</a></li>
+            <li><a href="#third-parties">Data collected by third parties</a></li>
+            <li><a href="#permissions">Device permissions</a></li>
+            <li><a href="#choices">Your choices</a></li>
+            <li><a href="#deletion">Deleting your data</a></li>
+            <li><a href="#retention">Retention and security</a></li>
+            <li><a href="#rights">Your rights</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="who">1. Who we are</h2>
+        <p>Purr Diary (“the app”) is developed and published by Faiz Ikhwan, an individual developer based in Malaysia (“we”, “us”). This policy explains what data the app handles, why, and the choices you have. It applies to the Purr Diary app on Android, iPhone and iPad, and to this website.</p>
+
+        <h2 id="device">2. Data on your device</h2>
+        <p>Everything you add to Purr Diary is stored locally on your device, in the app's private storage. This includes:</p>
+        <ul>
+          <li>cat profiles (name, avatar, birthday and similar details);</li>
+          <li>care entries such as reminders, medications, treatments, vaccines, vet visits, weights, daily check-ins, meals and expenses;</li>
+          <li>notes, photos and videos you take or choose in the app;</li>
+          <li>your settings, such as units, currency and reminder times.</li>
+        </ul>
+        <p><strong>We do not collect, receive or store any of this data.</strong> The app has no sign-up, no account and no developer server. Reminders are scheduled as notifications on your device itself.</p>
+
+        <h2 id="backup">3. Backup and export</h2>
+        <h3>Cloud backup (optional, off by default)</h3>
+        <p>If you turn on backup in Settings, the app copies your diary data to your own cloud storage:</p>
+        <ul>
+          <li><strong>Android:</strong> your Google Drive, in a hidden app folder. You sign in with Google, and the app asks only for access to its own app folder (the <code>drive.appdata</code> scope). It cannot see your other Drive files.</li>
+          <li><strong>iPhone and iPad:</strong> your iCloud, in the app's private iCloud container.</li>
+        </ul>
+        <p>The backup is stored in your account and is governed by Google's or Apple's own privacy terms. We have no access to it. Videos are included only if you turn on “Include videos”.</p>
+        <h3>Export files</h3>
+        <p>You can export your diary to a file, or share items such as Mood Cards and a PDF pet passport. These files are created only when you ask, and go only where you choose to send them.</p>
+
+        <h2 id="third-parties">4. Data collected by third parties</h2>
+        <p>The app uses the following Google services. They collect limited device and usage data automatically. None of them receives your cats' names, notes, health entries, photos or videos.</p>
+
+        <h3>Google AdMob (advertising)</h3>
+        <p>The free version shows ads served by Google AdMob. To show and measure ads and to prevent fraud, AdMob may collect:</p>
+        <ul>
+          <li>your device's advertising identifier (Android Advertising ID, or on iOS the IDFA only if you allow tracking);</li>
+          <li>approximate location derived from your IP address;</li>
+          <li>ad interactions, and device and app diagnostic information.</li>
+        </ul>
+        <p>In the EEA, the UK, Switzerland and other regions where required, the app asks for your consent through Google's consent form before personalised ads are shown. On iOS, the app asks for permission through Apple's App Tracking Transparency prompt; if you decline, ads are not personalised. Premium removes ads. See <a href="https://policies.google.com/technologies/ads" rel="noopener">how Google uses data for ads</a>.</p>
+
+        <h3>Firebase Analytics (usage analytics)</h3>
+        <p>We use Firebase Analytics to understand which features are used, so we can improve the app. It records app interaction events (for example, that a screen was opened or a feature was used), the type of device (phone or tablet), and general device and app information. Events never contain the content you enter.</p>
+
+        <h3>Firebase Crashlytics (crash reports)</h3>
+        <p>When the app crashes or hits an error, Crashlytics sends a crash report with technical details such as the stack trace, device model, operating system and app version. This helps us fix bugs. Crash reports never contain the content you enter.</p>
+
+        <h3>App stores</h3>
+        <p>Purchases of Premium are processed by Google Play or the Apple App Store. We don't receive your payment details. The store tells the app only whether Premium has been purchased.</p>
+
+        <p>Read more: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> · <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy and security</a> · <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>.</p>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>Data</th><th>Collected by</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Advertising ID</td><td>AdMob</td><td>Advertising, measurement, fraud prevention</td></tr>
+              <tr><td>Approximate location (from IP)</td><td>AdMob</td><td>Advertising, measurement, fraud prevention</td></tr>
+              <tr><td>App interactions</td><td>Firebase Analytics, AdMob</td><td>Analytics, advertising</td></tr>
+              <tr><td>Crash logs and diagnostics</td><td>Crashlytics, AdMob</td><td>App functionality, analytics</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>We do not sell your personal information. This data is not linked to your identity by us.</p>
+
+        <h2 id="permissions">5. Device permissions</h2>
+        <ul>
+          <li><strong>Camera:</strong> to take photos for your diary and to film Video Reactions. Used only while you are taking a photo or filming.</li>
+          <li><strong>Microphone:</strong> to record sound with a Video Reaction. Used only while filming.</li>
+          <li><strong>Photos:</strong> to choose existing photos and to save Video Reactions or Mood Cards to your gallery, when you ask.</li>
+          <li><strong>Notifications:</strong> to show your care reminders.</li>
+          <li><strong>Tracking (iOS):</strong> to allow personalised ads, if you choose.</li>
+        </ul>
+        <p>Photos, videos and recordings are not uploaded anywhere by us. You can change permissions at any time in your device settings.</p>
+
+        <h2 id="choices">6. Your choices</h2>
+        <ul>
+          <li><strong>Ad consent:</strong> change it at any time in Settings → Privacy &amp; ad choices (shown where required).</li>
+          <li><strong>Tracking on iOS:</strong> Settings app → Privacy &amp; Security → Tracking.</li>
+          <li><strong>Advertising ID on Android:</strong> Settings app → Google → Ads (or Privacy → Ads), where you can delete or reset it.</li>
+          <li><strong>Backup:</strong> turn it on or off in the app's Settings.</li>
+          <li><strong>Remove ads:</strong> buy Premium.</li>
+        </ul>
+
+        <h2 id="deletion">7. Deleting your data</h2>
+        <ul>
+          <li><strong>On your device:</strong> Settings → Delete all data on this device. Uninstalling the app also removes its local data.</li>
+          <li><strong>Cloud backup:</strong> Settings → Turn off backup → Also delete my cloud backup. You can also remove it from your Google Drive storage settings (“Manage apps”) or your iCloud storage settings.</li>
+          <li><strong>Analytics data:</strong> it is not linked to you, so we can't look it up by person. If you'd like us to try, email us with your request.</li>
+        </ul>
+
+        <h2 id="retention">8. Retention and security</h2>
+        <p>Your diary stays on your device until you delete it. Backups stay in your cloud account until you delete them. Data sent to Google services is kept according to Google's retention settings (for Firebase Analytics, we use a retention period of no more than 14 months; Crashlytics keeps crash reports for up to 90 days). All data sent over the network uses encrypted connections (HTTPS).</p>
+
+        <h2 id="rights">9. Your rights</h2>
+        <p>Depending on where you live (for example under the GDPR in Europe, the UK GDPR, the California Consumer Privacy Act, or Malaysia's Personal Data Protection Act 2010), you may have the right to access, correct, delete or restrict the use of your personal data, to object to its processing, and to withdraw consent. Because we don't hold your diary data, most of these rights can be used directly in the app. For anything else, contact us and we'll respond within 30 days. You may also complain to your local data protection authority.</p>
+
+        <h2 id="children">10. Children</h2>
+        <p>Purr Diary is not directed at children under 13, and we do not knowingly collect personal data from children. If you believe a child has provided data through the app, please contact us.</p>
+
+        <h2 id="changes">11. Changes to this policy</h2>
+        <p>We may update this policy when the app changes. We'll post the new version on this page and update the date at the top. For significant changes, we'll also let you know in the app.</p>
+
+        <h2 id="contact">12. Contact</h2>
+        <p>Questions or requests about privacy: <a href="mailto:faizikhwansupport@gmail.com">faizikhwansupport@gmail.com</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Faiz Ikhwan</span>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:faizikhwansupport@gmail.com">faizikhwansupport@gmail.com</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

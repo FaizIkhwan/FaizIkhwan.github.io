@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service · Purr Diary</title>
+  <meta name="description" content="The terms for using the Purr Diary app.">
+  <meta name="theme-color" content="#FFF7EE">
+  <link rel="icon" href="mascot.svg" type="image/svg+xml">
+  <style>
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-SemiBold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-ExtraBold.ttf") format("truetype"); font-weight: 800; font-display: swap; }
+@font-face { font-family: "Baloo 2"; src: url("fonts/Baloo2-ExtraBold.ttf") format("truetype"); font-weight: 800; font-display: swap; }
+
+:root {
+  --cream: #fff7ee;
+  --surface: #ffffff;
+  --muted: #f3e9df;
+  --ledge: #eadccf;
+  --ink: #4a3a33;
+  --ink-soft: #6b574c;
+  --ink-faint: #8a7466;
+  --peach: #ffa894;
+  --peach-ledge: #e27e68;
+  --peach-tint: #ffe3da;
+  --mint: #9fd9c0;
+  --mint-ledge: #6fbe9c;
+  --mint-tint: #cdeedf;
+  --lavender: #c8b8f2;
+  --radius: 22px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font: 600 17px/1.6 "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+a { color: var(--peach-ledge); font-weight: 800; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+
+h1, h2, h3 { font-family: "Baloo 2", "Nunito", system-ui, sans-serif; font-weight: 800; line-height: 1.15; margin: 0; }
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 22px; }
+
+/* Header */
+.site-header { padding: 18px 0; }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 24px; }
+.brand img { width: 42px; height: auto; }
+.nav { display: flex; gap: 18px; }
+.nav a { color: var(--ink-soft); text-decoration: none; font-size: 16px; }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--peach); text-decoration-thickness: 3px; }
+
+/* Hero */
+.hero { padding: 40px 0 56px; }
+.hero .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.hero h1 { font-size: clamp(40px, 6vw, 60px); }
+.hero p.lead { font-size: 20px; color: var(--ink-soft); margin: 16px 0 28px; max-width: 34ch; }
+.hero .mascot { width: 100%; max-width: 320px; justify-self: center; filter: drop-shadow(0 10px 0 var(--ledge)); }
+.badges { display: flex; gap: 12px; flex-wrap: wrap; }
+.pill {
+  display: inline-block; padding: 12px 22px; border-radius: 999px; text-decoration: none;
+  background: var(--peach); color: #4a2a22; box-shadow: 0 4px 0 var(--peach-ledge); font-weight: 800;
+}
+.pill.mint { background: var(--mint); color: #1f4d3c; box-shadow: 0 4px 0 var(--mint-ledge); }
+.pill:hover { color: #4a2a22; transform: translateY(1px); box-shadow: 0 3px 0 var(--peach-ledge); }
+.pill.mint:hover { color: #1f4d3c; box-shadow: 0 3px 0 var(--mint-ledge); }
+.soon { display: block; margin-top: 12px; color: var(--ink-faint); font-size: 15px; }
+
+/* Feature cards */
+.section { padding: 28px 0 48px; }
+.section h2 { font-size: 32px; margin-bottom: 20px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.card {
+  background: var(--surface); border: 2px solid var(--ledge); border-radius: var(--radius);
+  box-shadow: 0 5px 0 var(--ledge); padding: 22px;
+}
+.card .icon { font-size: 30px; line-height: 1; }
+.card h3 { font-size: 21px; margin: 10px 0 6px; }
+.card p { margin: 0; color: var(--ink-soft); font-size: 16px; }
+.card.peach { background: var(--peach-tint); border-color: #f2b9aa; box-shadow: 0 5px 0 #f2b9aa; }
+.card.mint { background: var(--mint-tint); border-color: #a6dcc4; box-shadow: 0 5px 0 #a6dcc4; }
+.note { margin-top: 22px; color: var(--ink-faint); font-size: 15px; }
+
+/* Legal pages */
+.doc { padding: 16px 0 56px; }
+.doc .wrap { max-width: 760px; }
+.doc article {
+  background: var(--surface); border: 2px solid var(--ledge); border-radius: var(--radius);
+  box-shadow: 0 5px 0 var(--ledge); padding: clamp(22px, 5vw, 44px);
+}
+.doc h1 { font-size: clamp(34px, 5vw, 44px); }
+.doc .updated { color: var(--ink-faint); margin: 6px 0 24px; font-size: 15px; }
+.doc h2 { font-size: 24px; margin: 34px 0 8px; }
+.doc h3 { font-size: 19px; margin: 22px 0 6px; font-family: "Nunito", sans-serif; }
+.doc p, .doc li { color: var(--ink-soft); }
+.doc ul { padding-left: 22px; }
+.doc li { margin: 6px 0; }
+.doc strong { color: var(--ink); font-weight: 800; }
+.summary { background: var(--mint-tint); border-radius: 16px; padding: 16px 20px; margin: 0 0 8px; }
+.summary p { margin: 0; color: #1f4d3c; }
+.summary ul { margin: 8px 0 0; }
+.summary li { color: #1f4d3c; }
+.toc { background: var(--muted); border-radius: 16px; padding: 14px 20px; margin: 20px 0 0; }
+.toc ol { margin: 6px 0 0; padding-left: 22px; columns: 2; column-gap: 28px; }
+.toc li { margin: 2px 0; font-size: 15px; }
+.toc a { font-weight: 600; color: var(--ink-soft); }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--muted); vertical-align: top; color: var(--ink-soft); }
+th { color: var(--ink); font-weight: 800; background: var(--cream); }
+.table-scroll { overflow-x: auto; }
+
+/* Footer */
+.site-footer { border-top: 2px solid var(--ledge); padding: 26px 0 40px; color: var(--ink-faint); font-size: 15px; }
+.site-footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.site-footer a { color: var(--ink-soft); }
+
+/* 404 */
+.lost { text-align: center; padding: 60px 0 80px; }
+.lost img { width: 180px; margin-bottom: 20px; }
+.lost h1 { font-size: 44px; }
+.lost p { color: var(--ink-soft); margin: 12px 0 26px; }
+
+@media (max-width: 760px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero .mascot { max-width: 200px; order: -1; }
+  .grid { grid-template-columns: 1fr; }
+  .toc ol { columns: 1; }
+}
+
+@media print {
+  .site-header, .site-footer, .toc { display: none; }
+  .doc article { border: 0; box-shadow: none; padding: 0; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="privacy.html"><img src="mascot.svg" alt="" width="42" height="38">Purr Diary</a>
+      <nav class="nav" aria-label="Main">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html" aria-current="page">Terms</a>
+        <a href="mailto:faizikhwansupport@gmail.com">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="doc">
+    <div class="wrap">
+      <article>
+        <h1>Terms of Service</h1>
+        <p class="updated">Last updated: 25 November 2026</p>
+
+        <div class="summary">
+          <p><strong>The short version</strong></p>
+          <ul>
+            <li>Purr Diary keeps notes and reminders. It is <strong>not</strong> veterinary advice. Always ask your vet.</li>
+            <li>The fun features are fiction, made for a smile.</li>
+            <li>Your data lives on your device, so keep a backup.</li>
+          </ul>
+        </div>
+
+        <nav class="toc" aria-label="Contents">
+          <strong>Contents</strong>
+          <ol>
+            <li><a href="#acceptance">Accepting these terms</a></li>
+            <li><a href="#licence">Your licence to use the app</a></li>
+            <li><a href="#not-vet">Not veterinary advice</a></li>
+            <li><a href="#fun">Fun features</a></li>
+            <li><a href="#data">Your content and data</a></li>
+            <li><a href="#premium">Premium and purchases</a></li>
+            <li><a href="#ads">Ads</a></li>
+            <li><a href="#acceptable-use">Acceptable use</a></li>
+            <li><a href="#third-party">Third-party services</a></li>
+            <li><a href="#ip">Intellectual property</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#liability">Limitation of liability</a></li>
+            <li><a href="#termination">Ending these terms</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#law">Governing law</a></li>
+            <li><a href="#stores">App store terms</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="acceptance">1. Accepting these terms</h2>
+        <p>These Terms of Service (“Terms”) are an agreement between you and Faiz Ikhwan (“we”, “us”), the developer of Purr Diary (“the app”). By downloading or using the app, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you don't agree, please don't use the app.</p>
+
+        <h2 id="licence">2. Your licence to use the app</h2>
+        <p>We give you a personal, non-exclusive, non-transferable, revocable licence to use the app on devices you own or control, for your own non-commercial use, in line with these Terms and the rules of the app store you got it from.</p>
+
+        <h2 id="not-vet">3. Not veterinary advice</h2>
+        <p>Purr Diary is a diary and reminder tool. It helps you keep track of your cat's care, but it <strong>does not diagnose, treat or give medical or veterinary advice</strong>, and it does not replace a qualified vet. Charts, check-ins and reminders show what you entered and nothing more.</p>
+        <p>Always follow your vet's instructions for medications, doses and treatments. If your cat seems unwell, contact a vet. In an emergency, contact an emergency vet straight away.</p>
+        <p>Reminders depend on your device's notification settings, battery saving, time zone and clock. They may be delayed or not appear. Please don't rely on the app as the only way to remember important care, such as medication.</p>
+
+        <h2 id="fun">4. Fun features</h2>
+        <p>The soundboard, Purr-dictions, Mood Cards, Video Reactions and similar features are entertainment only. Purr-dictions are made-up, playful guesses and do not translate or interpret what your cat is thinking or feeling. Some cats may be startled by sounds, so please play them at a gentle volume and stop if your cat seems stressed.</p>
+
+        <h2 id="data">5. Your content and data</h2>
+        <p>Everything you add to the app (cat profiles, notes, photos, videos and other entries) belongs to you. It is stored on your device, and we don't receive it.</p>
+        <p>Because your data lives on your device, <strong>you are responsible for keeping a backup</strong>. If you lose or reset your device, uninstall the app, or use “Delete all data”, your data may be lost for good unless you have a cloud backup or an export file. Cloud backups are stored in your own Google Drive or iCloud account and are subject to those services' terms. We are not responsible for data lost because of device failure, cloud service issues or actions you take.</p>
+        <p>Only add photos and videos that you have the right to use, and be thoughtful about what you share with others.</p>
+
+        <h2 id="premium">6. Premium and purchases</h2>
+        <p>Every care feature is free for one cat. Premium is an optional one-time purchase that unlocks extras such as up to 10 cats, no ads, every sound pack, premium avatars, a printable PDF pet passport, full chart history and a monthly report card. The features included may be described in the app at the time of purchase.</p>
+        <ul>
+          <li>Purchases are processed by Google Play or the Apple App Store, under their terms. Prices are shown in the store before you buy.</li>
+          <li>Premium is linked to your store account. Use “Restore purchases” in the app to get it back on a new device or after reinstalling, using the same store account.</li>
+          <li>Refunds are handled by the store you bought from, under its refund policy. We can't issue refunds directly.</li>
+          <li>Some sound packs can be unlocked for a limited time by watching a rewarded ad. These unlocks expire automatically.</li>
+        </ul>
+
+        <h2 id="ads">7. Ads</h2>
+        <p>The free version shows ads provided by Google AdMob. We are not responsible for the content of third-party ads or for any products or websites they lead to. See the <a href="privacy.html#third-parties">Privacy Policy</a> for how ad data is handled and how to change your choices.</p>
+
+        <h2 id="acceptable-use">8. Acceptable use</h2>
+        <p>Please don't:</p>
+        <ul>
+          <li>copy, modify, reverse engineer or redistribute the app, except where the law allows it;</li>
+          <li>try to get around Premium, ads or other limits;</li>
+          <li>use the app in a way that breaks the law or harms animals or other people;</li>
+          <li>use the app's sounds or artwork outside the app, for example in your own products.</li>
+        </ul>
+
+        <h2 id="third-party">9. Third-party services</h2>
+        <p>The app relies on services from Google (Firebase, AdMob, Google Drive, Google Sign-In) and Apple (iCloud, App Store). Your use of those services is governed by their own terms and policies. We aren't responsible for their availability or how they work.</p>
+
+        <h2 id="ip">10. Intellectual property</h2>
+        <p>The app, including its design, mascot, artwork, text, code and sounds, is owned by us or our licensors and is protected by copyright and other laws. Some parts, such as fonts and certain sounds, are used under open licences, which are credited in the app or its store listing. Except for the licence in section 2, these Terms give you no rights to our intellectual property.</p>
+
+        <h2 id="disclaimer">11. Disclaimer</h2>
+        <p>To the extent allowed by law, the app is provided “as is” and “as available”, without warranties of any kind, whether express or implied, including warranties of merchantability, fitness for a particular purpose, accuracy or non-infringement. We don't promise that the app will be error-free, uninterrupted, or that reminders will always appear on time.</p>
+
+        <h2 id="liability">12. Limitation of liability</h2>
+        <p>To the extent allowed by law, we will not be liable for any indirect, incidental, special or consequential damages, or for any loss of data, or for harm to you or your pet resulting from relying on the app instead of professional veterinary care. Our total liability for any claim relating to the app is limited to the amount you paid us for the app in the 12 months before the claim (which may be zero).</p>
+        <p>Nothing in these Terms limits any rights you have as a consumer that cannot be limited by law, including under Malaysia's Consumer Protection Act 1999 or the consumer laws of your country.</p>
+
+        <h2 id="termination">13. Ending these terms</h2>
+        <p>You can stop using the app at any time by uninstalling it. We may suspend or end your licence if you seriously break these Terms. We may also change, update or stop offering the app, or some of its features, at any time. Sections 5 and 10 to 15 continue to apply after these Terms end.</p>
+
+        <h2 id="changes">14. Changes to these Terms</h2>
+        <p>We may update these Terms from time to time. We'll post the new version on this page and update the date at the top. If you keep using the app after a change, you accept the updated Terms.</p>
+
+        <h2 id="law">15. Governing law</h2>
+        <p>These Terms are governed by the laws of Malaysia. Any dispute will be handled by the courts of Malaysia, unless the consumer laws of your country give you the right to bring a claim in your local courts. Before going to court, please contact us so we can try to sort things out informally.</p>
+
+        <h2 id="stores">16. App store terms</h2>
+        <h3>Apple</h3>
+        <p>If you downloaded the app from the Apple App Store, these Terms are between you and us, not Apple. Apple is not responsible for the app or its content, has no obligation to provide maintenance or support, and is not responsible for handling any claims about the app (including product liability, legal or regulatory claims, or intellectual property claims). If the app fails to meet any applicable warranty, you may notify Apple, and Apple may refund the purchase price, if any; to the extent allowed by law, Apple has no other warranty obligation. You confirm that you are not located in a country subject to a U.S. Government embargo, and that you are not on any U.S. Government list of prohibited or restricted parties. Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you. Your use of the app must also comply with Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Licensed Application End User License Agreement</a>, where it applies.</p>
+        <h3>Google Play</h3>
+        <p>If you downloaded the app from Google Play, your use is also subject to the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a>. Google is not a party to these Terms.</p>
+
+        <h2 id="contact">17. Contact</h2>
+        <p>Questions, feedback or support: <a href="mailto:faizikhwansupport@gmail.com">faizikhwansupport@gmail.com</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Faiz Ikhwan</span>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:faizikhwansupport@gmail.com">faizikhwansupport@gmail.com</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
